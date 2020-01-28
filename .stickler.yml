@@ -1,0 +1,16 @@
+---
+linters:
+    flake8:
+    eslint:
+        config: '../.eslintrc.js'
+    csslint:
+
+fixers:
+    enable: true
+
+files:
+    ignore:
+        - 'src/generated/*'
+        - 'webroot/bower_components/*'
+        - 'css/normalize.css'
+        - 'js/init.js'
