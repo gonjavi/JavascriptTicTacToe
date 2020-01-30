@@ -32,7 +32,7 @@ let i = '';
 
 function getbBoard(a = '', b ='', c = '', d = '', e = '', f = '', g = '', h = '', i = ''){
   var board;
-   board = [a,b,c,d,e,f,g,h];
+   board = [a,b,c,d,e,f,g,h,i];
    return board;
  }
 function readWinner(){
