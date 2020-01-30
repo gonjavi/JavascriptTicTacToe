@@ -35,7 +35,7 @@ let gameModule = (function(){
        if (square === "X" || square === "O"){ 
          x += 1;
         } 
-        if (x === 8){ 
+        if (x === 9){ 
           return draw = true;
         }   
      });
