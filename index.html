@@ -36,7 +36,7 @@
     </div>
       <div class="col l4"></div>
       <div class="col l6">
-        <table class="board col l6" id="board"">
+        <table class="board col l6" id="board">
           <tr>
             <th id="0"></th>
             <th id="1"></th>
@@ -65,6 +65,21 @@
           <div class="col l3" id="symbol2"> </div>
           <div class="col l3" id="p2"></div>
       </div>
+      <div class="row">
+        <div class="col l4"></div>
+        <h4 class="col l3" id="win_text"> </h4>
+        <h4 class="col l3" id="win_name"></h4>
+       
+      </div>
+      <div class="row">
+          <div class="col l5"></div>
+        <button id="restart" class="button" ></button>
+      </div>
+      <div class="row">
+        <div class="col l4"></div>
+        <h4 class="col l5" id="draw"> </h4>
+      </div>
+    
     </div>
   </div>
   <br><br><br><br>
@@ -90,6 +105,7 @@
   <script src="js/materialize.js"></script>
   
   <script type="module" src="js/main.js"></script>
+  <script type="module" src="modules/game.js"></script>
   <script src="js/init.js"></script>
   
   </body>
