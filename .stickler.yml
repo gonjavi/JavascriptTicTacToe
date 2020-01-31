@@ -2,11 +2,8 @@
 linters:
     flake8:
     eslint:
-        config: '../.eslintrc.yml'
+        config: '../.eslintrc.json'
     csslint:
-
-fixers:
-    enable: true
 
 files:
     ignore:
