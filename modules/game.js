@@ -61,6 +61,8 @@ let gameModule = (function(){
       document.getElementById('7').value = '';
       document.getElementById('8').innerHTML  = '';
       document.getElementById('8').value = '';
+      board_o = 0;
+      board_x = 0;
     }
   }
                                                                           
