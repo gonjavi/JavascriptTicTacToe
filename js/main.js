@@ -90,6 +90,14 @@ document.getElementById('restart').onclick = () =>{
   
 }
 
+function checkWinOrDraw(win){
+  if (win === true){ 
+    readWinner();  
+  }else{
+    draw = gameModule.checkDrawMixin(boardf);
+    if (draw === true){ readDraw(); }
+  }
+}
 
 document.getElementById('0').onclick = () =>{
   symbol == "X" ? symbol = "O" : symbol = "X";
@@ -99,10 +107,8 @@ document.getElementById('0').onclick = () =>{
   a = document.getElementById('0').value = symbol;
   boardf = render(a,b,c,d,e,f,g,h,i);
   win = gameModule.checkWinMixin(boardf);
-  if (win === true){ readWinner();  }
-  draw = gameModule.checkDrawMixin(boardf);
-  if (draw === true){ readDraw(); }
-  document.getElementById('0').onclick =true;
+  checkWinOrDraw(win);
+  document.getElementById('0').onclick =null;
 }
 
 document.getElementById('1').onclick = () =>{
@@ -113,9 +119,7 @@ document.getElementById('1').onclick = () =>{
   b = document.getElementById('1').value = symbol;
   boardf = render(a,b,c,d,e,f,g,h,i);
   win = gameModule.checkWinMixin(boardf);
-  if (win === true){ readWinner();  }
-  draw = gameModule.checkDrawMixin(boardf);
-  if (draw === true){ readDraw(); }
+  checkWinOrDraw(win);
   document.getElementById('1').onclick =null;
 }
 
@@ -127,9 +131,7 @@ document.getElementById('2').onclick = () =>{
   c = document.getElementById('2').value = symbol;
   boardf = render(a,b,c,d,e,f,g,h,i);
   win = gameModule.checkWinMixin(boardf);
-  if (win === true){ readWinner();  }
-  draw = gameModule.checkDrawMixin(boardf);
-  if (draw === true){ readDraw(); }
+  checkWinOrDraw(win);
   document.getElementById('2').onclick =null;
 }
 
@@ -141,9 +143,7 @@ document.getElementById('3').onclick = () =>{
   d = document.getElementById('3').value = symbol;
   boardf = render(a,b,c,d,e,f,g,h,i);
   win = gameModule.checkWinMixin(boardf);
-  if (win === true){ readWinner();  }
-  draw = gameModule.checkDrawMixin(boardf);
-  if (draw === true){ readDraw(); }
+  checkWinOrDraw(win);
   document.getElementById('3').onclick =null;
 }
 
@@ -155,9 +155,7 @@ document.getElementById('4').onclick = () =>{
   e = document.getElementById('4').value = symbol;
   boardf = render(a,b,c,d,e,f,g,h,i);
   win = gameModule.checkWinMixin(boardf);
-  if (win === true){ readWinner();  }
-  draw = gameModule.checkDrawMixin(boardf);
-  if (draw === true){ readDraw(); }
+  checkWinOrDraw(win);
   document.getElementById('4').onclick =null;
 }
 
@@ -169,9 +167,7 @@ document.getElementById('5').onclick = () =>{
   f = document.getElementById('5').value = symbol;
   boardf = render(a,b,c,d,e,f,g,h,i);
   win = gameModule.checkWinMixin(boardf);
-  if (win === true){ readWinner();  }
-  draw = gameModule.checkDrawMixin(boardf);
-  if (draw === true){ readDraw(); }
+  checkWinOrDraw(win);
   document.getElementById('5').onclick =null;
 }
 
@@ -183,9 +179,7 @@ document.getElementById('6').onclick = () =>{
   g = document.getElementById('6').value = symbol;
   boardf = render(a,b,c,d,e,f,g,h,i);
   win = gameModule.checkWinMixin(boardf);
-  if (win === true){ readWinner();  }
-  draw = gameModule.checkDrawMixin(boardf);
-  if (draw === true){ readDraw(); }
+  checkWinOrDraw(win);
   document.getElementById('6').onclick =null;
 }
 
@@ -197,9 +191,7 @@ document.getElementById('7').onclick = () =>{
   h = document.getElementById('7').value = symbol;
   boardf = render(a,b,c,d,e,f,g,h,i);
   win = gameModule.checkWinMixin(boardf);
-  if (win === true){ readWinner();  }
-  draw = gameModule.checkDrawMixin(boardf);
-  if (draw === true){ readDraw(); }
+  checkWinOrDraw(win);
   document.getElementById('7').onclick =null;
 }
 
@@ -211,9 +203,7 @@ document.getElementById('8').onclick = () =>{
   i = document.getElementById('8').value = symbol;
   boardf = render(a,b,c,d,e,f,g,h,i);
   win = gameModule.checkWinMixin(boardf);
-  if (win === true){ readWinner();  }
-  draw = gameModule.checkDrawMixin(boardf);
-  if (draw === true){ readDraw(); }
+  checkWinOrDraw(win);
   document.getElementById('8').onclick =null;
 }
 
