@@ -11,6 +11,7 @@ let draw;
 
 document.querySelector('.board').innerHTML = Gameboard.displayBoard;
 document.getElementById('board').style.visibility = 'hidden';
+document.getElementById('restart').style.visibility = 'hidden';
 
 document.getElementById('start').onclick = () =>{
   document.getElementById('board').style.visibility = 'visible';
@@ -48,6 +49,7 @@ function render(a = '', b ='', c = '', d = '', e = '', f = '', g = '', h = '', i
  }
 function readWinner(){
   if (win === true && symbol === "O"){
+    document.getElementById('restart').style.visibility = 'visible';
     document.getElementById('win_text').innerHTML = 'The winner is:';
     if (player2.pname){
     document.getElementById('win_name').innerHTML = player2.pname;
@@ -58,6 +60,7 @@ function readWinner(){
     blocKeys();
   }
   if (win === true && symbol === "X"){
+    document.getElementById('restart').style.visibility = 'visible';
     document.getElementById('win_text').innerHTML = 'The winner is:';
     if (player1.pname){
       document.getElementById('win_name').innerHTML = player1.pname;
@@ -71,6 +74,7 @@ function readWinner(){
 
 function readDraw(){
   document.getElementById('draw').innerHTML = "The game is drawn";
+  document.getElementById('restart').style.visibility = 'visible';
   document.getElementById('restart').innerHTML = 'Play Again';
   blocKeys();
 }
