@@ -32,13 +32,13 @@ let gameModule = (function(){
       let draw = false; 
       let x = 0;
       board.forEach(function (square){
-       if (square === "X" || square === "O"){ 
-         x += 1;
+        if (square === "X" || square === "O"){ 
+          x += 1;
         } 
         if (x === 9){ 
           return draw = true;
         }   
-     });
+      });
       return draw;
     },
 
