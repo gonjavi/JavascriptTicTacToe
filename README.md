@@ -6,4 +6,4 @@ This is a basic website with the Tic Tac Toe game based on javascript, applying 
 <a href="https://github.com/gonjavi/">Gonzalo Javier Mancilla</a>
 
 ## Live version
-<a href="">Don't forget link</a>
+<a href="https://rawcdn.githack.com/gonjavi/JavascriptTicTacToe/d5f9510bcf3fc82556eb058b68bed6151782bb65/index.html">Tic Tac Toe Link</a>
