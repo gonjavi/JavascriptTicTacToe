@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>TicTacToe JS</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="deep-orange lighten-2" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Tic Tac Toe Game</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#"></a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#"></a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      
+      <h3 class="header center orange-text">Tic Tac Toe JavaScript</h3>
+      
+      <div class="inputs">
+        <h3>Players' Names</h3>
+        <input id="player1" type="text" placeholder="Name Player 1">
+        <input id="player2" type="text" placeholder="Name Player 2">        
+        <button id="start" class="button" >Start Game</button>
+    </div>
+      <div class="col l4"></div>
+      <div class="col l6">
+        <table class="board col l6" id="board">
+          
+        </table>
+      </div>
+      <br><br>
+      <div class="row">
+        <div class="col l3"></div>
+        <div class="col l3" id="symbol1"> </div>
+        <div class="col l3" id="p1"></div>
+      </div>
+      <div class="row">
+          <div class="col l3"></div>
+          <div class="col l3" id="symbol2"> </div>
+          <div class="col l3" id="p2"></div>
+      </div>
+      <div class="row">
+        <div class="col l4"></div>
+        <h4 class="col l3" id="win_text"> </h4>
+        <h4 class="col l3" id="win_name"></h4>
+       
+      </div>
+      <div class="row">
+          <div class="col l5"></div>
+        <button id="restart" class="button" ></button>
+      </div>
+      <div class="row">
+        <div class="col l4"></div>
+        <h4 class="col l5" id="draw"> </h4>
+      </div>
+    
+    </div>
+  </div>
+  <br><br><br><br>
+  
+
+  <footer class="page-footer grey darken-1">
+    <div class="container">
+      <div class="row">
+       
+        
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="https://github.com/gonjavi">Gonzalo J. Mancilla</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="modules/gameboard.js"></script>
+  <script type="module" src="modules/game.js"></script>
+  <script src="js/init.js"></script>
+  
+  </body>
+</html>
