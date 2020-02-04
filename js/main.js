@@ -1,6 +1,6 @@
-import { Player } from '/modules/player.js';
-import { gameModule } from '/modules/game.js';
-import { Gameboard } from '/modules/gameboard.js';
+import { Player } from '../modules/player.js';
+import { gameModule } from '../modules/game.js';
+import { Gameboard } from '../modules/gameboard.js';
 
 let player1;
 let player2;
